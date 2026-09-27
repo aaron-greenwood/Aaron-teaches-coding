@@ -5,6 +5,9 @@ To use this course, you must have the following tools installed:
 - Git
 - A modern browser of your choice (e.g. Chrome, Edge)
 - Visual Studio Code
+- VS Code Live Preview Extension 
+
+https://marketplace.visualstudio.com/items?itemName=ms-vscode.live-server
 
 ##  Setting Things Up
 1. Create a git folder to store your repositories.

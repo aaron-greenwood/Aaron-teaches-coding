@@ -18,3 +18,10 @@ Things to note:
 - Document query (DOM)
 
 ## Exercise 2:
+Review the [Exercise2.html](Exercise2.html) file.
+1. Add paragraphs for minutes, seconds, and miliseconds.
+2. Add script to perform calculations and display the results in teh appropriate paragraphs.
+3. Change the number of days to verify that the calculations work.
+
+Things to note:
+- How the + operator joins text and number values (concatonation.)
