@@ -16,4 +16,15 @@ To use this course, you must have the following tools installed:
 
 `git checkout -b studentnickname-work`
 
+4. Push your student branch up to the repository on GitHub:
+
+`git push -u origin studentnickname-work`
+
 ##  Completeing Exercises
+
+Once you have completed an exercise on your local computer (the one you're sitting in front of,) you can add, commit and push those changes:
+
+`git add *`
+`git commit -m "Some exercise"`
+`git push`
+
