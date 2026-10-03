@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Exercise 2.1</title>
+</head>
+
+<body>
+    <h1>Exercise 2.1</h1>
+    <p id="myParagraph">Placeholder Text</p>
+    <form>
+        <label for="fname">First name:</label><br>
+        <input type="text" id="fname" name="fname"><br>
+        <!--Add a Last Name Field-->
+        <br>
+        <p>What is your favorite flavor of Ice Cream</p>
+        <input type="radio" id="vanilla" name="fav_icecream" value="vanilla">
+        <label for="html">Vanilla</label><br>
+        <input type="radio" id="chocolate" name="fav_icecream" value="chocolate">
+        <label for="css">Chocolate</label><br>
+        <!--Add more flavor choices-->
+        <br>
+        <button type="button" onclick="DisplayMessage()">Click Me!</button>
+    </form>
+    <p id="output"></p>
+
+    <!--Add your headings and paragraphs for multiplication and division below-->
+
+    <script>
+        function DisplayMessage()
+        {
+            var firstName = document.getElementById("fname");
+            //Get the last name element here.
+            var selectedFlavor = document.querySelector('input[name="fav_icecream"]:checked');
+            var outputParagraph = document.getElementById("output");
+
+            // Add the last name value to the message
+            output.innerText = "Hi " + firstName.value +", I like " + selectedFlavor.value +" too!"
+        }
+
+        //Add your scripts for mulitiplication and division below
+
+    </script>
+</body>
+
+</html>
