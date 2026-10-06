@@ -6,7 +6,9 @@
         <h1>Exercise 1.2</h1>
         <p id="days"></p>
         <p id="Hours"></p>
-
+        <p id="minutes"></p>
+        <p id="seconds"></p>
+        <p id="milliseconds"></p>
         <!--Add paragraphs for minutes, seconds, and milliseconds-->
 
         <script>
@@ -18,8 +20,18 @@
            var hourParagraph = document.getElementById("Hours");
            hourParagraph.innerText = "Hours: " + hoursInDays;
 
+           var minutesInDays = hoursInDays * 60;
+           var minutesParagraph = document.getElementById("minutes");
+           minutesParagraph.innerText = "minutes: " + minutesInDays;
            //Add code to calculate and display minutes, seconds and milliseconds.
 
+           var secondsInDays = minutesInDays  * 60;
+           var secondsParagraph = document.getElementById("seconds");
+           secondsParagraph.innerText = "seconds: " + secondsInDays;
+
+           var millisecondsInDays = secondsInDays  * 1000;
+           var millisecondsParagraph = document.getElementById("milliseconds");
+           millisecondsParagraph.innerText = "milliseconds: " + millisecondsInDays;
         </script>
     </body>
 </html>
