@@ -1,34 +1,45 @@
 <html>
-    <head>
-        <title>Exercise 1.1</title>
-    </head>
-    <body>
-        <h1>Exercise 1.1</h1>
-        <p id="myParagraph">Placeholder Text</p>
-        <h2>Addition!</h2>
-        <p id="myParagraph2">Placeholder Text</p>
-        <h2>Subtraction!</h2>
-        <p id="myParagraph3">Placeholder Text</p>
 
-        <!--Add your headings and paragraphs for multiplication and division below-->
+<head>
+    <title>Exercise 1.1</title>
+</head>
 
-        <script>
-            // string variable containing a text value
-            var message = "Lets do some exciting math!";
-            //Dom query that retrieves the paragraph HTML element
-            var paragraphTag = document.getElementById("myParagraph");
-            //Assignment statement setting our message on the paragraph.
-            paragraphTag.innerText = message;
+<body>
+    <h1>Exercise 1.1</h1>
+    <p id="myParagraph">Placeholder Text</p>
+    <h2>Addition!</h2>
+    <p id="myParagraph2">Placeholder Text</p>
+    <h2>Subtraction!</h2>
+    <p id="myParagraph3">Placeholder Text</p>
 
-            var num1 = 21, num2 = 7;
-            var paragraph2Tag = document.getElementById("myParagraph2");
-            paragraph2Tag.innerText = num1 + num2;
-            
-            var paragraph3Tag = document.getElementById("myParagraph3");
-            paragraph3Tag.innerText = num1 - num2;
+    <!--Add your headings and paragraphs for multiplication and division below-->
+    <h2>Mulitiplication!</h2>
+    <p id="myParagraph4">Placeholder Text</p>
 
-            //Add your scripts for mulitiplication and division below
+    <h2>Division!</h2>
+    <p id="myParagraph5">Placeholder Text</p>
+    <script>
+        // string variable containing a text value
+        var message = "Lets do some exciting math!";
+        //Dom query that retrieves the paragraph HTML element
+        var paragraphTag = document.getElementById("myParagraph");
+        //Assignment statement setting our message on the paragraph.
+        paragraphTag.innerText = message;
 
-        </script>
-    </body>
+        var num1 = 21, num2 = 7;
+        var paragraph2Tag = document.getElementById("myParagraph2");
+        paragraph2Tag.innerText = num1 + num2;
+
+        var paragraph3Tag = document.getElementById("myParagraph3");
+        paragraph3Tag.innerText = num1 - num2;
+
+        //Add your scripts for mulitiplication and division below
+        var paragraph4Tag = document.getElementById("myParagraph4");
+        paragraph4Tag.innerText = num1 * num2;
+
+        var paragraph5Tag = document.getElementById("myParagraph5");
+        paragraph5Tag.innerText = num1 / num2;
+    </script>
+</body>
+
 </html>
