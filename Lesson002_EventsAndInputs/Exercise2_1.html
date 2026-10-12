@@ -10,14 +10,18 @@
     <form>
         <label for="fname">First name:</label><br>
         <input type="text" id="fname" name="fname"><br>
-        <!--Add a Last Name Field-->
+        <label for="lname">Last name:</label><br>
+        <input type="text" id="lname" name="lname"><br>
         <br>
         <p>What is your favorite flavor of Ice Cream</p>
         <input type="radio" id="vanilla" name="fav_icecream" value="vanilla">
         <label for="html">Vanilla</label><br>
         <input type="radio" id="chocolate" name="fav_icecream" value="chocolate">
         <label for="css">Chocolate</label><br>
-        <!--Add more flavor choices-->
+        <input type="radio" id="cookies and cream" name="fav_icecream" value="cookies and cream">
+        <label for="css">Cookie's and Cream</label><br>
+        <input type="radio" id="peanut chocolate" name="fav_icecream" value="peanut chocolate">
+        <label for="css">peanut Chocolate</label><br>
         <br>
         <button type="button" onclick="DisplayMessage()">Click Me!</button>
     </form>
@@ -29,7 +33,7 @@
         function DisplayMessage()
         {
             var firstName = document.getElementById("fname");
-            //Get the last name element here.
+            var lastname = document.getElementById("lname")
             var selectedFlavor = document.querySelector('input[name="fav_icecream"]:checked');
             var outputParagraph = document.getElementById("output");
 
