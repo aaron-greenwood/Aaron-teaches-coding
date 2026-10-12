@@ -27,9 +27,14 @@ Things to note:
 
 ## Exercise 2:
 Review the [Exercise2_2.html](Exercise2_2.html) file.
-1. Add paragraphs for minutes, seconds, and miliseconds.
-2. Add script to perform calculations and display the results in teh appropriate paragraphs.
-3. Change the number of days to verify that the calculations work.
+1. Make the current 2 x 2 table a 3 x 3 table.
+2. Change the current and non-current cell colors to something different than aqua and green.
+3. Make table border thicker.
+4. Change the table border color.
+5. Change the table size using min hight and min width.
 
 Things to note:
-- How the + operator joins text and number values (concatonation.)
+- HTML Tables, rows, and cells
+- CSS Styles
+- onMouseEnter and onMouseLeave events
+- event object and target property
