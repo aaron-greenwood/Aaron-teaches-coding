@@ -1,0 +1,45 @@
+<html>
+
+<head>
+    <title>Example 2.4</title>
+    <style>
+        table, td {
+            border: 1px solid black; 
+            border-collapse: collapse;
+            background-color: white;
+        }
+        table {overflow: hidden;table-layout: fixed; width:100px; height:50px;}
+        tr {overflow: hidden;table-layout: fixed; }
+        td {overflow: hidden; height: 50px; width: 100px; text-align: center; font-size:20px;padding-top: 0px;  
+            padding-bottom: 0px;}
+    </style>
+</head>
+
+<body>
+    <h1>Example 2.4</h1>
+    <table>
+
+        <tr id="row1">
+            <td id="r1col1" onclick="SetToCurrentTurn(event)"></td>
+        </tr>
+
+    </table>
+    <p id="output"></p>
+
+    <script>
+        //Variable to keep track of whose turn it is.  It starts with George's turn.
+        var currentTurn = 'George';
+        function SetToCurrentTurn(event) {
+            event.target.innerText = currentTurn;
+            //Change the current turn to the other player using an if statement.  If it is George's turn, change it to Fred's turn.  If it is Fred's turn, change it to George's turn.
+            if(currentTurn == 'George') {
+                currentTurn = 'Fred';
+            } else {
+                currentTurn = 'George';
+            }
+        }
+
+    </script>
+</body>
+
+</html>
