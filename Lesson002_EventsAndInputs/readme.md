@@ -38,3 +38,14 @@ Things to note:
 - CSS Styles
 - onMouseEnter and onMouseLeave events
 - event object and target property
+
+## Exercise 3:
+Review the [Exercise2_3.html](Exercise2_3.html) file.
+1. Make the current 2 x 2 table a 3 x 3 table.
+2. Create a setToO function that will set the inner text of an element to "O".
+3. Add a double-click handler (dblclick event) that calls the setToO(...) function to set the cell to the "O".
+
+Things to note:
+- Javascript functions
+- click and dblclick events.
+- more table styles
