@@ -1,0 +1,43 @@
+<html>
+
+<head>
+    <title>Exercise 2.3</title>
+    <style>
+        table, td {
+            border: 1px solid black; 
+            border-collapse: collapse;
+            background-color: white;
+        }
+        table {overflow: hidden;table-layout: fixed; width:400px; height:400px;}
+        tr {overflow: hidden;table-layout: fixed; }
+        td {overflow: hidden; height: 100px; width: 100px; text-align: center; font-size:85px;padding-top: 0px;  
+            padding-bottom: 0px;}
+    </style>
+</head>
+
+<body>
+    <h1>Exercise 2.3</h1>
+    <table>
+        <!--Add another row and column to make this a 3x3 grid-->
+        <!--Add a double click event handler that sets the cell to Y-->
+        <tr id="row1">
+            <td id="r1col1" onclick="SetToX(event)"></td>
+            <td id="r1col2" onclick="SetToX(event)"></td>
+        </tr>
+        <tr id="row2">
+            <td id="r1col1" onclick="SetToX(event)"></td>
+            <td id="r1col2" onclick="SetToX(event)"></td>
+        </tr>
+    </table>
+    <p id="output"></p>
+
+    <script>
+        function SetToX(event) {
+            event.target.innerText = 'X';
+        }
+        //Create a SetToY function that sets the inner text of the cell to zero.
+
+    </script>
+</body>
+
+</html>
