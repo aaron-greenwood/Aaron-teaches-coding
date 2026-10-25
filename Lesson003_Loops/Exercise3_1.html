@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Exercise 3.1</title>
+</head>
+
+<body>
+    <h1>Exercise 3.1</h1>
+    <button type="button" onclick="RepeatSentence(5)">Repeat Sentence</button>
+    <!--Add a text box that allows the user to specify the number of times to repeat the sentence-->
+    <!--Add a button that clears all the sentences-->
+
+    <div id="mySection"></div>
+
+    <script>
+        //Fix the script so that it continues to number the sentences with the correct numbers
+        //no matter how many times the button is clicked.
+        function RepeatSentence(times)
+        {
+           var section = document.getElementById("mySection");
+            for(var i = 0; i < times; i++)
+            {
+                //Fix the code so that it displays 1st and 2nd instead of 1th and 2th
+                section.innerHTML += "<p>Repeating this sentence for the  " + (i+1) + "th time.</p>";
+            }
+        }
+
+        //Add a function that clears all the sentences from the section.
+
+    </script>
+</body>
+
+</html>
