@@ -1,39 +1,83 @@
 <html>
 
 <head>
-    <title>Exercise 2.3</title>
+    <title>tictokcheat</title>
     <style>
-        table, td {
-            border: 1px solid black; 
+        table,
+        td {
+            border: 1px solid black;
             border-collapse: collapse;
             background-color: white;
         }
-        table {overflow: hidden;table-layout: fixed; width:400px; height:400px;}
-        tr {overflow: hidden;table-layout: fixed; }
-        td {overflow: hidden; height: 100px; width: 100px; text-align: center; font-size:85px;padding-top: 0px;  
-            padding-bottom: 0px;}
+
+        table {
+            overflow: hidden;
+            table-layout: fixed;
+            width: 400px;
+            height: 400px;
+        }
+
+        tr {
+            overflow: hidden;
+            table-layout: fixed;
+        }
+
+        td {
+            overflow: hidden;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            font-size: 85px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
     </style>
 </head>
 
 <body>
     <h1>Exercise 2.3</h1>
+    <p id="turn">Current Turn: X</p>
     <table>
         <!--Add another row and column to make this a 3x3 grid-->
         <!--Add a double click event handler that sets the cell to Y-->
         <tr id="row1">
-            <td id="r1col1" onclick="SetToX(event)"></td>
-            <td id="r1col2" onclick="SetToX(event)"></td>
+            <td id="r1col1" onclick="setCurrentTurn(event)"></td>
+            <td id="r1col2" onclick="setCurrentTurn(event)"></td>
+            <td id="r3col3" onclick="setCurrentTurn(event)"></td>
         </tr>
         <tr id="row2">
-            <td id="r1col1" onclick="SetToX(event)"></td>
-            <td id="r1col2" onclick="SetToX(event)"></td>
+            <td id="r2col1" onclick="setCurrentTurn(event)"></td>
+            <td id="r2col2" onclick="setCurrentTurn(event)"></td>
+            <td id="r3col3" onclick="setCurrentTurn(event)"></td>
+        </tr>
+        <tr id="row3">
+            <td id="r3col1" onclick="setCurrentTurn(event)"></td>
+            <td id="r3col2" onclick="setCurrentTurn(event)"></td>
+            <td id="r3col3" onclick="setCurrentTurn(event)"></td>
         </tr>
     </table>
     <p id="output"></p>
 
     <script>
+        var curTurn="X";
+        function setCurrentTurn(event) {
+            
+            var turnParagraph= document.getElementById("turn");
+            event.target.innerText= curTurn;
+            if(curTurn=="X"){
+                curTurn="O";
+                turnParagraph.innerText="urrent Turn: O";
+            }
+            else{
+                curTurn="X";
+            }
+        }
         function SetToX(event) {
-            event.target.innerText = 'X';
+            event.target
+            .innerText = 'X';
+        }
+         function SetToO(event) {
+            event.target.innerText = 'O';
         }
         //Create a SetToY function that sets the inner text of the cell to zero.
 
