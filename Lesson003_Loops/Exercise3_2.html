@@ -1,0 +1,33 @@
+<html>
+
+<head>
+    <title>Exercise 3.2</title>
+</head>
+
+<body>
+    <h1>Exercise 3.2</h1>
+    <button type="button" onclick="ListColors()">List Colors</button>
+    <!--Add a button that clears the section when clicked.-->
+    <!--Add a button that lists the colors in reverse order when clicked.-->
+    <div id="mySection"></div>
+
+    <script>
+        
+        var colors = ["red", "blue", "green", "yellow", "orange", "purple", "pink", "brown", "black", "white"]; 
+        function ListColors()
+        {
+            var section = document.getElementById("mySection");
+            //Create a loop that lists all the colors in the array.
+            section.innerHTML += '<p style="color: '+colors[0]+';">'+colors[0]+'</p>';
+            section.innerHTML += '<p style="color: '+colors[1]+';">'+colors[1]+'</p>';
+            section.innerHTML += '<p style="color: '+colors[2]+';">'+colors[2]+'</p>';
+        }
+
+        //Add a function that clears all the sentences from the section.
+        
+        //Add a function that lists the colors in reverse order.
+
+    </script>
+</body>
+
+</html>

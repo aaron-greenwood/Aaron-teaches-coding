@@ -1,0 +1,68 @@
+<html>
+
+<head>
+    <title>Exercise 3.4</title>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        table {
+            overflow: hidden;
+            table-layout: fixed;
+        }
+
+        tr {
+            overflow: hidden;
+            table-layout: fixed;
+        }
+
+        td {
+            overflow: hidden;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            font-size: 10px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercise 3.4</h1>
+    <button type="button" onclick="CreateTable()">Create Table</button>
+    <table id="myTable">
+
+    </table>
+
+    <script>
+        //This is a 2 dimensional array. Each row is an array of colors. We have arrays for 3 rows
+        //inside the main array.
+        var colColors = [
+            ["green", "green", "green", "green", "green", "green", "green", "green", "green", "green"],
+            ["green", "white", "white", "white", "white", "white", "white", "white", "white", "green"],
+            ["green", "green", "green", "green", "green", "green", "green", "green", "green", "green"]
+        ];
+
+        //3. Add more arrays for the other rows of the table and write them to the screen.
+        //4. Change the color pattern to create a different design.
+        function CreateTable() {
+            var table = document.getElementById("myTable");
+            var row = table.insertRow(0);
+            for (var i = 0; i < colColors[0].length; i++) {
+                var cell = row.insertCell(i);
+                cell.style.backgroundColor = colColors[0][i];
+            }
+            //1. Add a loop outside of the first loop to loop through the rows of the table
+            //  and create a row for every row in the array.
+        }
+
+        
+    </script>
+</body>
+
+</html>
