@@ -1,0 +1,78 @@
+<html>
+
+<head>
+    <title>Exercise 3.5</title>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        table {
+            overflow: hidden;
+            table-layout: fixed;
+        }
+
+        tr {
+            overflow: hidden;
+            table-layout: fixed;
+        }
+
+        td {
+            overflow: hidden;
+            height: 30px;
+            width: 30px;
+            text-align: center;
+            font-size: 10px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercise 3.5</h1>
+    <form>
+        <label for="x">X:</label>
+        <input type="number" id="x" name="x"><br><br>
+        <label for="y">Y:</label>
+        <input type="number" id="y" name="y"><br><br>
+        <label for="color">Color:</label>
+        <select id="color" name="color">
+            <option value="red">Red</option>
+            <option value="blue">Blue</option>
+            <option value="green">Green</option>
+            <option value="yellow">Yellow</option>
+        </select><br><br>
+    <button type="button" onclick="CreateTable()">Create Table</button>
+    </form>
+    <p />  <p />
+    <div id="myCanvas"></div>
+
+    <script>
+
+        function CreateTable() {
+            var x = document.getElementById("x").value;
+            var y = document.getElementById("y").value;
+            var myCanvas = document.getElementById("myCanvas");
+            myCanvas.innerHTML = "";
+            var table = document.createElement("table");
+            //1. Add a nested loop to create a table with x rows and y columns. Use the values from the text boxes for x and y.
+            myCanvas.appendChild(table);
+            var row = table.insertRow(0);
+            var cell = row.insertCell(0);   
+            
+            //2. Add an event listener to each cell that calls the SetCellColor function when the cell is clicked.
+            
+        }
+        function SetCellColor(){
+
+        }
+
+        
+    </script>
+</body>
+
+</html>

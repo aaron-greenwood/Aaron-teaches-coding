@@ -1,7 +1,7 @@
 <html>
 
 <head>
-    <title>Exercise 3.1</title>
+    <title>Exercise 3.4</title>
     <style>
         table,
         td {
@@ -33,34 +33,35 @@
 </head>
 
 <body>
-    <h1>Exercise 3.3</h1>
-    <button type="button" onclick="CreateTable(3,3)">Create Table</button>
+    <h1>Exercise 3.4</h1>
+    <button type="button" onclick="CreateTable()">Create Table</button>
     <table id="myTable">
 
     </table>
 
     <script>
-        var row1Colors = ["green", "green", "green", "green", "green", "green", "green", "green", "green", "green"];
-        var row2Colors = ["green", "white", "white", "white", "white", "white", "white", "white", "white", "green"];
-        var row3Colors = ["green", "green", "green", "green", "green", "green", "green", "green", "green", "green"];
+        //This is a 2 dimensional array. Each row is an array of colors. We have arrays for 3 rows
+        //inside the main array.
+        var colColors = [
+            ["green", "green", "green", "green", "green", "green", "green", "green", "green", "green"],
+            ["green", "white", "white", "white", "white", "white", "white", "white", "white", "green"],
+            ["green", "green", "green", "green", "green", "green", "green", "green", "green", "green"]
+        ];
 
         //3. Add more arrays for the other rows of the table and write them to the screen.
         //4. Change the color pattern to create a different design.
         function CreateTable() {
             var table = document.getElementById("myTable");
             var row = table.insertRow(0);
-            for (var i = 0; i < row1Colors.length; i++) {
+            for (var i = 0; i < colColors[0].length; i++) {
                 var cell = row.insertCell(i);
-                cell.style.backgroundColor = row1Colors[i];
+                cell.style.backgroundColor = colColors[0][i];
             }
-            //1. Add a second loop to create a second row using row2Colors
-            //1. Add a third loop to create a third row using row3Colors
-
-            
+            //1. Add a loop outside of the first loop to loop through the rows of the table
+            //  and create a row for every row in the array.
         }
 
-        //2. Add a function to write one row of the table to the screen and use this function in the CreateTable function.
-        //   Pass the array of colors into the function.
+        
     </script>
 </body>
 

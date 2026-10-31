@@ -32,3 +32,25 @@ Review the [Exercise3_3.html](Exercise3_3.html) file.
 
 Things to note:
 - For Loop
+
+##  Exercise 4:
+Review the [Exercise3_4.html](Exercise3_4.html) file.
+1. Add a loop outside the existing loop (nested loop) that will loop through the rows in the array so that three rows of cells will all be displayed.
+2. Add rows to the array with colors. Your loops should be able to display all the new rows.
+3. Change the colors to make a pattern. 
+
+Things to note:
+- Nested Loops
+
+##  Exercise 5:
+Review the [Exercise3_5.html](Exercise3_5.html) file.
+1. Add a nested loop to create a table with x rows and y columns. Use the values from the text boxes for x and y.
+2. Add an event listener to each cell that calls the SetCellColor function when the cell is clicked.
+```cell.addEventListener("click", SetCellColor); ```
+3. Modify the SetCellColor function to set the background of the target cell to the selected color.
+
+Things to note:
+- event listeners
+- nested loops
+- Numeric inputs
+- Select Boxes
