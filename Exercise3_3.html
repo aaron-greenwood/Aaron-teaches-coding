@@ -1,0 +1,67 @@
+<html>
+
+<head>
+    <title>Exercise 3.1</title>
+    <style>
+        table,
+        td {
+            border: 1px solid black;
+            border-collapse: collapse;
+            background-color: white;
+        }
+
+        table {
+            overflow: hidden;
+            table-layout: fixed;
+        }
+
+        tr {
+            overflow: hidden;
+            table-layout: fixed;
+        }
+
+        td {
+            overflow: hidden;
+            height: 100px;
+            width: 100px;
+            text-align: center;
+            font-size: 10px;
+            padding-top: 0px;
+            padding-bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Exercise 3.3</h1>
+    <button type="button" onclick="CreateTable(3,3)">Create Table</button>
+    <table id="myTable">
+
+    </table>
+
+    <script>
+        var row1Colors = ["green", "green", "green", "green", "green", "green", "green", "green", "green", "green"];
+        var row2Colors = ["green", "white", "white", "white", "white", "white", "white", "white", "white", "green"];
+        var row3Colors = ["green", "green", "green", "green", "green", "green", "green", "green", "green", "green"];
+
+        //3. Add more arrays for the other rows of the table and write them to the screen.
+        //4. Change the color pattern to create a different design.
+        function CreateTable() {
+            var table = document.getElementById("myTable");
+            var row = table.insertRow(0);
+            for (var i = 0; i < row1Colors.length; i++) {
+                var cell = row.insertCell(i);
+                cell.style.backgroundColor = row1Colors[i];
+            }
+            //1. Add a second loop to create a second row using row2Colors
+            //1. Add a third loop to create a third row using row3Colors
+
+            
+        }
+
+        //2. Add a function to write one row of the table to the screen and use this function in the CreateTable function.
+        //   Pass the array of colors into the function.
+    </script>
+</body>
+
+</html>
